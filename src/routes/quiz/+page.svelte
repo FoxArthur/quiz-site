@@ -23,6 +23,8 @@
             index += 1;
         } else if (index == data.questions.length - 1) {
             show = false;
+            setTimeout(toggleFireworks, 2500)
+            setTimeout(deleteFireworks, 3999)
         }
 
         awnser = "";
@@ -33,6 +35,30 @@
     function setAwnser(event: any) {
         awnser = event.currentTarget.value;
     }
+
+    import { Fireworks } from "@fireworks-js/svelte";
+    import type { FireworksOptions } from "@fireworks-js/svelte";
+    import { onMount } from "svelte";
+    let fw: Fireworks;
+    let enabled = true;
+    let options: FireworksOptions = {
+        opacity: 0.5,
+    };
+    function toggleFireworks() {
+        const fireworks = fw.fireworksInstance();
+        if (fireworks.isRunning) {
+            fireworks.waitStop();
+        } else {
+            fireworks.start();
+        }
+    }
+    function deleteFireworks() {
+        document.querySelector(".fireworks").remove();
+    }
+    onMount(() => {
+        const fireworks = fw.fireworksInstance();
+        console.log(fireworks);
+    });
 </script>
 
 <section
@@ -60,14 +86,45 @@
             />
         </form>
     {:else}
-        <section>
-            your score is {score} <br />
-            return to <a rel="external" href="/" class="underline">home</a>
+        <Fireworks id="canvas" bind:this={fw} autostart={true} {options} class="fireworks opacity-100 z-10" />
+        <section class="text-center">
+            <p class="text-xl font-bold mb-1">
+                your score is {score} <br />
+            </p>
+            <p>
+                return to <a rel="external" href="/" class="underline">home</a>
+            </p>
         </section>
     {/if}
 </section>
 
+
 <style>
+    :global(.fireworks) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: #000;
+        animation: fade 4s linear;
+    }
+
+    @keyframes fade{
+     80%{
+        opacity: 1;
+     }
+     100%{
+        opacity: 0;
+     }
+    }
+
+    .buttons {
+        display: flex;
+        gap: 4px;
+        position: absolute;
+        z-index: 1;
+    }
     label {
         transition: ease 0.3s;
     }

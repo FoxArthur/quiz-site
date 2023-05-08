@@ -14,7 +14,11 @@ const config = {
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter()
 	},
-	preprocess: vitePreprocess()
+	preprocess: vitePreprocess(),
+
+	optimizeDeps: {
+		exclude: ['layercake']
+	},
 };
 
 export default config;
