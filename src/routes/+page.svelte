@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="animate-spin">
     <div class="px-6 py-20 text-center text-paynes-gray bg-fairy-tale">
       <h1 class="mb-6 text-5xl font-bold">QuizzyLizzy</h1>
       <h3 class="mb-8 text-3xl font-bold ">Door Arthur en Pieter</h3>
@@ -25,7 +25,7 @@
               Over de quiz:
             </h3>
 
-            <p class="mt-2 text-sm text-gray-500 animate-spin">
+            <p class="mt-2 text-sm text-gray-500">
               Wij hebben deze quiz gemaakt om op deze manier onze frontend skill
               bij te scherpen. <br />
               Deze quiz heeft voornamelijk het doel om ons te trainen in het gebruiken
