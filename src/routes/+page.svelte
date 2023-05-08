@@ -10,14 +10,13 @@
       class="text-paynes-gray bg-fairy-tale h-[50vh] flex flex-col items-center justify-center"
     >
       <h1 class="mb-6 text-5xl font-bold">QuizzyLizzy</h1>
-      <h3 class="mb-8 text-3xl font-bold">Door Arthur en Pieter</h3>
+      <h3 class="mb-8 text-3xl font-bold ">Door Arthur en Pieter</h3>
       <a
         class="inline-block rounded bg-paynes-gray primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 hover:shadow-2xl"
         data-te-ripple-init
         data-te-ripple-color="light"
         href="quiz"
-        role="button">Start de quiz</a
-      >
+        role="button">Start de quiz</a>
     </div>
 
     <div class="grid grid-cols-2 gap-4 text-center mt-4">
@@ -28,7 +27,7 @@
               Over de quiz:
             </h3>
 
-            <p class="mt-2 text-sm text-gray-500">
+            <p class="mt-2 text-sm text-gray-500 animate-spin">
               Wij hebben deze quiz gemaakt om op deze manier onze frontend skill
               bij te scherpen. <br />
               Deze quiz heeft voornamelijk het doel om ons te trainen in het gebruiken
