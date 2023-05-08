@@ -56,13 +56,23 @@
             <input
                 type="submit"
                 value="submit"
-                class="bg-paynes-gray px-4 py-2 rounded cursor-pointer text-white hover:shadow-2xl"
+                class="bg-paynes-gray px-4 py-2 rounded cursor-pointer text-white hover:shadow-2xl transition duration-150"
             />
         </form>
     {:else}
         <section>
             your score is {score} <br />
-            return to <a href="/" class="underline">home</a>
+            return to <a rel="external" href="/" class="underline">home</a>
         </section>
     {/if}
 </section>
+
+<style>
+    label {
+        transition: ease 0.3s;
+    }
+
+    label:hover {
+        letter-spacing: 0.06rem;
+    }
+</style>
