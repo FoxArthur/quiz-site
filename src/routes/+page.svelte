@@ -6,11 +6,13 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="px-6 py-20 text-center text-paynes-gray bg-fairy-tale">
+    <div
+      class="text-paynes-gray bg-fairy-tale h-[50vh] flex flex-col items-center justify-center"
+    >
       <h1 class="mb-6 text-5xl font-bold">QuizzyLizzy</h1>
       <h3 class="mb-8 text-3xl font-bold">Door Arthur en Pieter</h3>
       <a
-        class="inline-block rounded bg-paynes-gray primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-paynes-gray transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+        class="inline-block rounded bg-paynes-gray primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white transition duration-150 hover:shadow-2xl"
         data-te-ripple-init
         data-te-ripple-color="light"
         href="quiz"
