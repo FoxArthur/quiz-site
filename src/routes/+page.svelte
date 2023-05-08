@@ -6,9 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div
-      class="text-paynes-gray bg-fairy-tale h-[50vh] flex flex-col items-center justify-center"
-    >
+    <div  class="text-paynes-gray bg-fairy-tale h-[50vh] flex flex-col items-center justify-center">
       <h1 class="mb-6 text-5xl font-bold">QuizzyLizzy</h1>
       <h3 class="mb-8 text-3xl font-bold ">Door Arthur en Pieter</h3>
       <a
@@ -71,3 +69,5 @@
     </div>
   </body>
 </html>
+
+
