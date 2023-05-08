@@ -23,5 +23,9 @@
 		"typescript": "^5.0.0",
 		"vite": "^4.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@fireworks-js/svelte": "^2.10.4",
+		"fireworks-js": "^2.10.4"
+	}
 }
